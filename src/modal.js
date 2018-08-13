@@ -5,22 +5,22 @@ export class Modal extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      isOpen: props.isOpen
+      open: props.isOpen
     }
   }
 
   onOpen = () => {
-    if (!this.state.isOpen) {
+    if (!this.state.open) {
       this.setState({
-        isOpen: true
+        open: true
       })
     }
   }
 
   onClose = () => {
-    if (this.state.isOpen) {
+    if (this.state.open) {
       this.setState({
-        isOpen: false
+        open: false
       })
     }
   }
@@ -43,7 +43,7 @@ export class Modal extends Component {
     event.stopPropagation()
   }
 
-  render({ children }, { isOpen }) {
+  render({ children }, { open: isOpen }) {
     return children[0]({
       isOpen,
       onOpen: this.onOpen,
