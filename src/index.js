@@ -1,5 +1,5 @@
 import { render } from "preact"
-import FontAwesomeIcon from "@fortawesome/react-fontawesome"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faTimes } from "@fortawesome/fontawesome-free-solid"
 import { Modal } from "./modal"
 import { VideoModal } from "./videoModal"
